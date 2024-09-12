@@ -118,6 +118,8 @@ Resources:
           Principal:
             Service: codepipeline.amazonaws.com
           Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AdministratorAccess
 
   CodePipelineServiceRolePolicy:
     Type: AWS::IAM::Policy
